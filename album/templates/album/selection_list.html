@@ -1,0 +1,13 @@
+<center>
+<h1>MUNDIAL</h1>
+
+<h2>Selections</h2>
+
+<div>
+    {% for c in object_list %}
+        <a href="{% url 'selection-detail' c.pk %}">
+            {{ c.name }} <br>
+        </a>
+    {% endfor %}
+</div>
+</center>
